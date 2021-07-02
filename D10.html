@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title id="myTitle">My Webpage</title>
+<title>My Webpage</title>
  <style>
       table,
       th,
@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-<h1>My Favourite Movies</h1>
+<h1 id="myTitle">My Favourite Movies</h1>
 <hr style="width:100%">
 <ol>
 <li>The Wolf of Wall Street</li>
@@ -123,13 +123,13 @@ const addToList = function (content) {
         list.appendChild(entry)   
       }
       window.addEventListener("load", function() { addToList("Bradley Cooper") })
+      
 
-const changeTitle = function(newTitle) {
+ const changeTitle = function (newTitle) {
         const element = document.getElementById("myTitle")
         element.innerHTML = newTitle
       }
       window.addEventListener("load",function() { changeTitle("My New Title") })
-
 </script>
 </body>
 </html>
