@@ -25,6 +25,18 @@ console.log(Math.min(...randomNumbers))
 Math.max(...randomNumbers)
 console.log(Math.max(...randomNumbers))
 
+const animalArray = ["dog", "cat", "bear"]
+const rodentArray = ["hamster", "guinea pig"]
+    
+    function returnLongest() {
+    if (animalArray => rodentArray) {
+        return animalArray
+    } else {
+        return rodentArray
+    }
+  }
+console.log(returnLongest(animalArray, rodentArray))
+
         /* 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
         22) Create an object with properties such name, surname, email
         23) Delete Email from the previously created object
