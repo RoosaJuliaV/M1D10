@@ -36,7 +36,7 @@
 <li>The Prestige</li>
 <li>Toy Story</li>
 </ol>
-<table width="100%">
+<table id="myTable"; width="100%">
 <tr>
 <td>Other Movies</td>
 <td>Movie Poster</td>
@@ -72,7 +72,7 @@
 <td>2h 22min</td>
 </tr>
 </table>
-<div>
+<div id="container">
 <p>Famous Actors:</p>
 <ul>
   <p>American Male Actors</p>
@@ -104,8 +104,13 @@ p.disappear {
     visibility: hidden;
 }
 </style>
+<script>
+const element = document.getElementById ("container")
+console.log(element)
+
+</script>
 </body>
-</html>
+</html> 
 
     <!--
 

@@ -1,5 +1,10 @@
 JS EXERCISES
 
+let x = "John"
+let y = "Doe"
+
+console.log(x + " <> " + y)
+
 const person = {
   firstName: "Roosa",
   lastName: "Vuotso",
