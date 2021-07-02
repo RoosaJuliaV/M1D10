@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Webpage</title>
+<title id="myTitle">My Webpage</title>
  <style>
       table,
       th,
@@ -76,17 +76,18 @@
 <p>Famous Actors:</p>
 <ul>
   <p>American Male Actors</p>
-    <ul>
+    <ul id= "unorderedList">
       <li>Brad Pitt</li>
       <li>George Clooney</li>
       <li>Morgan Freeman</li>
     </ul>
 </ul>
 <div>
+<button id = "myButton" onclick=function"hideImages()">Click to hide all images</button>
 <footer>
   <p class="thick"> © Roosa Vuotso<br>
   Zelinkagasse 2, Österreich<br>
-  <a href= "mailto:mysmartphone@shop.com">roosavuotso@hotmail.com</a></p><br>
+  <a class="email" href= "mailto:mysmartphone@shop.com">roosavuotso@hotmail.com</a></p><br>
   <p class="disappear">This text should disappear</p>
 </footer>
 <style>
@@ -105,14 +106,58 @@ p.disappear {
 }
 </style>
 <script>
-const element = document.getElementById ("container")
-console.log(element)
+const myNewElement = document.getElementById ("container")
+console.log(myNewElement)
+
+console.log(document.getElementsByTagName("td"))
+
+window.onload = function() {
+    console.log("Page loaded")
+  }
+
+const addToList = function (content) {
+        let list = document.getElementById("unorderedList")
+        const newItem = document.getElementById("unorderedList").value
+        let entry = document.createElement("li")
+        entry.appendChild(document.createTextNode(content))
+        list.appendChild(entry)   
+      }
+      window.addEventListener("load", function() { addToList("Bradley Cooper") })
+
+const changeTitle = function(newTitle) {
+        const element = document.getElementById("myTitle")
+        element.innerHTML = newTitle
+      }
+      window.addEventListener("load",function() { changeTitle("My New Title") })
 
 </script>
 </body>
-</html> 
+</html>
 
-    <!--
+<!-- const paintItRed = function () {
+        let lists = document.getElementsByTagName("email")
+        for (let i = 0; i < lists.length; i++) {
+          lists[i].style.backgroundColor = "red" 
+          }
+      }
+      window.addEventListener("load", function() { paintItRed("red") })
+
+
+
+
+
+
+/* document.getElementById("myButton").onclick = function () { remove(a); }
+
+/* function hideImages() {
+  var images = document.getElementsByTagName('img');
+  for (i = 0; i < images.length;i++ ) {
+  images[i].style.display = "none";
+}
+let onclick = hideImages() 
+
+
+    
 
         HTML EXERCISES
 
@@ -181,7 +226,7 @@ console.log(element)
     -->
 
 
-    <head>
+  <!--- <head>
     </head>
     <body></body>
-</html>
+</html> 
