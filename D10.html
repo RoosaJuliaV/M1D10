@@ -87,7 +87,7 @@
 <footer>
   <p class="thick"> © Roosa Vuotso<br>
   Zelinkagasse 2, Österreich<br>
-  <a class="email" href= "mailto:mysmartphone@shop.com">roosavuotso@hotmail.com</a></p><br>
+  <a href= "mailto:roosavuotso@hotmail.com">roosavuotso@hotmail.com</a></p><br>
   <p class="disappear">This text should disappear</p>
 </footer>
 <style>
@@ -123,42 +123,26 @@ const addToList = function (content) {
         list.appendChild(entry)   
       }
       window.addEventListener("load", function() { addToList("Bradley Cooper") })
-      
+
 
  const changeTitle = function (newTitle) {
         const element = document.getElementById("myTitle")
         element.innerHTML = newTitle
       }
       window.addEventListener("load",function() { changeTitle("My New Title") })
+
+
+const emptyList = function () {
+        let list = document.getElementById("unorderedList")
+        unorderedList.innerHTML = " "
+      }
+      window.addEventListener("load", function() { emptyList(" ") })
+
 </script>
 </body>
 </html>
 
-<!-- const paintItRed = function () {
-        let lists = document.getElementsByTagName("email")
-        for (let i = 0; i < lists.length; i++) {
-          lists[i].style.backgroundColor = "red" 
-          }
-      }
-      window.addEventListener("load", function() { paintItRed("red") })
-
-
-
-
-
-
-/* document.getElementById("myButton").onclick = function () { remove(a); }
-
-/* function hideImages() {
-  var images = document.getElementsByTagName('img');
-  for (i = 0; i < images.length;i++ ) {
-  images[i].style.display = "none";
-}
-let onclick = hideImages() 
-
-
-    
-
+<!--
         HTML EXERCISES
 
         1) Create a title for the page
@@ -226,7 +210,3 @@ let onclick = hideImages()
     -->
 
 
-  <!--- <head>
-    </head>
-    <body></body>
-</html> 
