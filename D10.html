@@ -80,9 +80,10 @@
   </li>
 </ul>
 <footer>
-  <p> © Roosa Vuotso<br>
+  <p class="thick"> © Roosa Vuotso<br>
   Zelinkagasse 2, Österreich<br>
-  <a href= "mailto:mysmartphone@shop.com">roosavuotso@hotmail.com</a></p>
+  <a href= "mailto:mysmartphone@shop.com">roosavuotso@hotmail.com</a></p><br>
+  <p class="disappear">This text should disappear</p>
 </footer>
 <style>
 footer {
@@ -90,6 +91,13 @@ footer {
   padding: 3px;
   color: black;
   border: 1px solid black;
+}
+p.thick {
+  font-weight: bold;
+  font-size: 20px;
+}
+p.disappear {
+    visibility: hidden;
 }
 </style>
 </body>
