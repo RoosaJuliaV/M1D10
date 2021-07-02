@@ -8,7 +8,8 @@ const person = {
 delete person.email
 console.log(person)
 
-
+const colours = ["yellow", "green", "blue", "red", "white", "purple", "orange", "pink", "black", "grey"]
+console.log(colours)
 
         /* 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
         22) Create an object with properties such name, surname, email
